@@ -1,0 +1,245 @@
+{
+  "name": "Model Compass Official Plugins",
+  "description": "Official plugins for Model Compass - Provider, Agent, and Router plugins",
+  "version": "1.0.0",
+  "updated": "2025-01-01T00:00:00Z",
+  "registry": [
+    {
+      "name": "Core Provider Plugins",
+      "description": "Essential LLM provider integrations",
+      "plugins": [
+        {
+          "id": "@yungkei/model-compass-openai-provider",
+          "name": "OpenAI Provider",
+          "type": "provider",
+          "description": "OpenAI GPT models (GPT-4, GPT-3.5, etc.)",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/openai-provider",
+          "npm": "@yungkei/model-compass-openai-provider",
+          "license": "MIT",
+          "tags": ["openai", "gpt", "chatgpt", "provider"],
+          "config": {
+            "api_base_url": "https://api.openai.com/v1",
+            "api_key": "${OPENAI_API_KEY}",
+            "models": [
+              "gpt-4o",
+              "gpt-4-turbo",
+              "gpt-3.5-turbo"
+            ]
+          }
+        },
+        {
+          "id": "@yungkei/model-compass-anthropic-provider",
+          "name": "Anthropic Provider",
+          "type": "provider",
+          "description": "Anthropic Claude models (Claude 3, etc.)",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/anthropic-provider",
+          "npm": "@yungkei/model-compass-anthropic-provider",
+          "license": "MIT",
+          "tags": ["anthropic", "claude", "provider"],
+          "config": {
+            "api_base_url": "https://api.anthropic.com",
+            "api_key": "${ANTHROPIC_API_KEY}",
+            "models": [
+              "claude-3-5-sonnet-latest",
+              "claude-3-opus-latest",
+              "claude-3-haiku-latest"
+            ]
+          }
+        },
+        {
+          "id": "@yungkei/model-compass-gemini-provider",
+          "name": "Google Gemini Provider",
+          "type": "provider",
+          "description": "Google Gemini models",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/gemini-provider",
+          "npm": "@yungkei/model-compass-gemini-provider",
+          "license": "MIT",
+          "tags": ["google", "gemini", "provider"],
+          "config": {
+            "api_base_url": "https://generativelanguage.googleapis.com/v1",
+            "api_key": "${GEMINI_API_KEY}",
+            "models": [
+              "gemini-1.5-pro",
+              "gemini-pro"
+            ]
+          }
+        },
+        {
+          "id": "@yungkei/model-compass-ollama-provider",
+          "name": "Ollama Provider",
+          "type": "provider",
+          "description": "Local models via Ollama",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/ollama-provider",
+          "npm": "@yungkei/model-compass-ollama-provider",
+          "license": "MIT",
+          "tags": ["ollama", "local", "opensource", "provider"],
+          "config": {
+            "api_base_url": "http://localhost:11434/v1",
+            "api_key": "",
+            "models": [
+              "llama2",
+              "mistral",
+              "codellama"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "IDE & Agent Plugins",
+      "description": "Integrations with AI coding assistants",
+      "plugins": [
+        {
+          "id": "@yungkei/model-compass-claude-agent",
+          "name": "Claude Code",
+          "type": "agent",
+          "description": "Claude Code CLI integration",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/claude-agent",
+          "npm": "@yungkei/model-compass-claude-agent",
+          "license": "MIT",
+          "tags": ["claude", "cli", "agent"],
+          "configFiles": [
+            {
+              "path": "~/.claude/settings.json",
+              "template": {
+                "env": {
+                  "ANTHROPIC_BASE_URL": "{env:ANTHROPIC_BASE_URL}",
+                  "ANTHROPIC_API_KEY": "{env:ANTHROPIC_API_KEY}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "@yungkei/model-compass-cursor-agent",
+          "name": "Cursor IDE",
+          "type": "agent",
+          "description": "Cursor IDE MCP integration",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/cursor-agent",
+          "npm": "@yungkei/model-compass-cursor-agent",
+          "license": "MIT",
+          "tags": ["cursor", "ide", "mcp", "agent"],
+          "configFiles": [
+            {
+              "path": "~/.cursor/mcp.json",
+              "template": {
+                "model-compass": {
+                  "command": "node",
+                  "args": ["$MC_PATH/router-mcp.js"],
+                  "env": {
+                    "MC_BASE_URL": "http://localhost:3456/v1"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "@yungkei/model-compass-continue-agent",
+          "name": "Continue",
+          "type": "agent",
+          "description": "Continue VSCode plugin integration",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/continue-agent",
+          "npm": "@yungkei/model-compass-continue-agent",
+          "license": "MIT",
+          "tags": ["continue", "vscode", "agent"],
+          "configFiles": [
+            {
+              "path": "~/.continue/config.json",
+              "template": {
+                "models": [
+                  {
+                    "title": "Model Compass",
+                    "model": "claude-3-5-sonnet",
+                    "provider": "openai",
+                    "apiBase": "http://localhost:3456/v1",
+                    "apiKey": "sk-dummy"
+                  }
+                ]
+              },
+              "merge": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Router Plugins",
+      "description": "Advanced routing strategies",
+      "plugins": [
+        {
+          "id": "@yungkei/model-compass-cost-based-router",
+          "name": "Cost-Based Router",
+          "type": "router",
+          "description": "Routes requests to minimize API costs",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/cost-based-router",
+          "npm": "@yungkei/model-compass-cost-based-router",
+          "license": "MIT",
+          "tags": ["router", "cost", "optimization"],
+          "priority": 100
+        },
+        {
+          "id": "@yungkei/model-compass-latency-router",
+          "name": "Latency-Aware Router",
+          "type": "router",
+          "description": "Routes requests based on provider latency",
+          "version": "1.0.0",
+          "author": {
+            "name": "Model Compass Team",
+            "email": "dev@modelcompass.ai"
+          },
+          "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/latency-router",
+          "npm": "@yungkei/model-compass-latency-router",
+          "license": "MIT",
+          "tags": ["router", "latency", "performance"],
+          "priority": 90
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "totalPlugins": 10,
+    "lastUpdated": "2025-01-01T00:00:00Z",
+    "registryVersion": "1.0.0"
+  }
+}
