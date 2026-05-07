@@ -15,12 +15,12 @@
           "description": "OpenAI GPT models (GPT-4, GPT-3.5, etc.)",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/openai-provider",
           "npm": "@yungkei/model-compass-openai-provider",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["openai", "gpt", "chatgpt", "provider"],
           "config": {
             "api_base_url": "https://api.openai.com/v1",
@@ -39,12 +39,12 @@
           "description": "Anthropic Claude models (Claude 3, etc.)",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/anthropic-provider",
           "npm": "@yungkei/model-compass-anthropic-provider",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["anthropic", "claude", "provider"],
           "config": {
             "api_base_url": "https://api.anthropic.com",
@@ -63,12 +63,12 @@
           "description": "Google Gemini models",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/gemini-provider",
           "npm": "@yungkei/model-compass-gemini-provider",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["google", "gemini", "provider"],
           "config": {
             "api_base_url": "https://generativelanguage.googleapis.com/v1",
@@ -86,12 +86,12 @@
           "description": "Local models via Ollama",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/ollama-provider",
           "npm": "@yungkei/model-compass-ollama-provider",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["ollama", "local", "opensource", "provider"],
           "config": {
             "api_base_url": "http://localhost:11434/v1",
@@ -116,12 +116,12 @@
           "description": "Claude Code CLI integration",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/claude-agent",
           "npm": "@yungkei/model-compass-claude-agent",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["claude", "cli", "agent"],
           "configFiles": [
             {
@@ -142,12 +142,12 @@
           "description": "Cursor IDE MCP integration",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/cursor-agent",
           "npm": "@yungkei/model-compass-cursor-agent",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["cursor", "ide", "mcp", "agent"],
           "configFiles": [
             {
@@ -157,7 +157,7 @@
                   "command": "node",
                   "args": ["$MC_PATH/router-mcp.js"],
                   "env": {
-                    "MC_BASE_URL": "http://localhost:3456/v1"
+                    "MC_BASE_URL": "http://localhost:8765/v1"
                   }
                 }
               }
@@ -171,12 +171,12 @@
           "description": "Continue VSCode plugin integration",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/continue-agent",
           "npm": "@yungkei/model-compass-continue-agent",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["continue", "vscode", "agent"],
           "configFiles": [
             {
@@ -187,7 +187,7 @@
                     "title": "Model Compass",
                     "model": "claude-3-5-sonnet",
                     "provider": "openai",
-                    "apiBase": "http://localhost:3456/v1",
+                    "apiBase": "http://localhost:8765/v1",
                     "apiKey": "sk-dummy"
                   }
                 ]
@@ -209,12 +209,12 @@
           "description": "Routes requests to minimize API costs",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/cost-based-router",
           "npm": "@yungkei/model-compass-cost-based-router",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["router", "cost", "optimization"],
           "priority": 100
         },
@@ -225,12 +225,12 @@
           "description": "Routes requests based on provider latency",
           "version": "1.0.0",
           "author": {
-            "name": "Model Compass Team",
-            "email": "dev@modelcompass.ai"
+            "name": "yungkei",
+            "email": "53671318+yungkei@users.noreply.github.com"
           },
           "repository": "https://github.com/yungkei/model-compass-plugins/tree/main/packages/latency-router",
           "npm": "@yungkei/model-compass-latency-router",
-          "license": "MIT",
+          "license": "Apache-2.0",
           "tags": ["router", "latency", "performance"],
           "priority": 90
         }

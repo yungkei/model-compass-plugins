@@ -1,0 +1,21 @@
+{
+  "name": "@yungkei/model-compass-continue-agent",
+  "version": "1.0.0",
+  "description": "Continue IDE integration agent for Model Compass",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "model-compass",
+    "continue",
+    "vscode",
+    "ide"
+  ],
+  "license": "Apache-2.0"
+}

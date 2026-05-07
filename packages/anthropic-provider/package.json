@@ -1,0 +1,22 @@
+{
+  "name": "@yungkei/model-compass-anthropic-provider",
+  "version": "1.0.0",
+  "description": "Anthropic provider plugin for Model Compass - Claude models integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "model-compass",
+    "anthropic",
+    "claude",
+    "llm",
+    "provider"
+  ],
+  "license": "Apache-2.0"
+}

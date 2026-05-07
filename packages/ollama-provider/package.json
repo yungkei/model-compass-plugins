@@ -1,0 +1,22 @@
+{
+  "name": "@yungkei/model-compass-ollama-provider",
+  "version": "1.0.0",
+  "description": "Ollama provider plugin for Model Compass - Local models integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "model-compass",
+    "ollama",
+    "local",
+    "llm",
+    "provider"
+  ],
+  "license": "Apache-2.0"
+}
