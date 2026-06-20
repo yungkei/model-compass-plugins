@@ -9,7 +9,11 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@yungkei/model-compass-core": "^1.0.0"
   },
   "keywords": [
     "model-compass",
@@ -17,5 +21,8 @@
     "agent",
     "cli"
   ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
