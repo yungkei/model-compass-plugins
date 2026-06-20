@@ -4,10 +4,10 @@
  * This plugin configures Continue IDE to use Model Compass for model routing.
  */
 
-import { AgentPlugin } from '@yungkei/model-compass-core';
+import { PluginType } from '@yungkei/model-compass-core';
 
-export const plugin: AgentPlugin = {
-  type: 'agent' as const,
+export const plugin = {
+  type: PluginType.AGENT,
   metadata: {
     id: '@yungkei/model-compass-continue-agent',
     name: 'Continue IDE Agent',

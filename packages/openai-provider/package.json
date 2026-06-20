@@ -1,52 +1,52 @@
-{
-  "name": "@yungkei/model-compass-openai-provider",
-  "version": "1.0.0",
-  "description": "OpenAI provider plugin for Model Compass - OpenAI GPT models integration",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "prepublishOnly": "npm run build"
-  },
-  "keywords": [
-    "model-compass",
-    "openai",
-    "gpt",
-    "llm",
-    "provider",
-    "plugin"
-  ],
-  "author": "yungkei <53671318+yungkei@users.noreply.github.com>",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yungkei/model-compass-plugins",
-    "directory": "packages/openai-provider"
-  },
-  "bugs": {
-    "url": "https://github.com/yungkei/model-compass-plugins/issues"
-  },
-  "homepage": "https://github.com/yungkei/model-compass-plugins#readme",
-  "peerDependencies": {
-    "@yungkei/model-compass-core": "^1.0.0"
-  },
-  "dependencies": {
-    "@yungkei/model-compass-core": "^1.0.0",
-    "axios": "^1.6.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.3.0"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+﻿{
+    "name":  "@yungkei/model-compass-openai-provider",
+    "version":  "1.0.0",
+    "description":  "OpenAI provider plugin for Model Compass - OpenAI GPT models integration",
+    "main":  "dist/index.js",
+    "types":  "dist/index.d.ts",
+    "files":  [
+                  "dist"
+              ],
+    "scripts":  {
+                    "build":  "tsc",
+                    "dev":  "tsc --watch",
+                    "prepublishOnly":  "npm run build"
+                },
+    "keywords":  [
+                     "model-compass",
+                     "openai",
+                     "gpt",
+                     "llm",
+                     "provider",
+                     "plugin"
+                 ],
+    "author":  "yungkei \u003c53671318+yungkei@users.noreply.github.com\u003e",
+    "license":  "Apache-2.0",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/yungkei/model-compass-plugins",
+                       "directory":  "packages/openai-provider"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/yungkei/model-compass-plugins/issues"
+             },
+    "homepage":  "https://github.com/yungkei/model-compass-plugins#readme",
+    "peerDependencies":  {
+                             "@yungkei/model-compass-core":  "^1.0.0"
+                         },
+    "dependencies":  {
+                         "@yungkei/model-compass-core":  "^1.0.0",
+                         "axios":  "^1.6.0"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^20.0.0",
+                            "typescript":  "^5.3.0"
+                        },
+    "publishConfig":  {
+                          "access":  "public",
+                          "registry":  "https://registry.npmjs.org/"
+                      },
+    "engines":  {
+                    "node":  "\u003e=18.0.0"
+                }
 }

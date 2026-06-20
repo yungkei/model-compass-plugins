@@ -1,29 +1,37 @@
-{
-  "name": "@yungkei/model-compass-ollama-provider",
-  "version": "1.0.0",
-  "description": "Ollama provider plugin for Model Compass - Local models integration",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "prepublishOnly": "npm run build"
-  },
+﻿{
+    "name":  "@yungkei/model-compass-ollama-provider",
+    "version":  "1.0.0",
+    "description":  "Ollama provider plugin for Model Compass - Local models integration",
+    "main":  "dist/index.js",
+    "types":  "dist/index.d.ts",
+    "files":  [
+                  "dist"
+              ],
+    "scripts":  {
+                    "build":  "tsc",
+                    "dev":  "tsc --watch",
+                    "prepublishOnly":  "npm run build"
+                },
   "dependencies": {
     "@yungkei/model-compass-core": "^1.0.0"
   },
-  "keywords": [
-    "model-compass",
-    "ollama",
-    "local",
-    "llm",
-    "provider"
-  ],
-  "license": "Apache-2.0",
-  "publishConfig": {
-    "access": "public"
-  }
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  },
+    "keywords":  [
+                     "model-compass",
+                     "ollama",
+                     "local",
+                     "llm",
+                     "provider"
+                 ],
+    "license":  "Apache-2.0",
+    "publishConfig":  {
+                          "access":  "public"
+                      },
+    "devDependencies":  {
+                            "@types/node":  "^20.0.0",
+                            "typescript":  "^5.3.0"
+                        }
 }

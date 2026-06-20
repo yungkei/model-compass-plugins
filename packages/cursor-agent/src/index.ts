@@ -6,10 +6,10 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { AgentPlugin } from '@yungkei/model-compass-core';
+import { PluginType } from '@yungkei/model-compass-core';
 
-export const plugin: AgentPlugin = {
-  type: 'agent' as const,
+export const plugin = {
+  type: PluginType.AGENT,
   metadata: {
     id: '@yungkei/model-compass-cursor-agent',
     name: 'Cursor IDE Agent',

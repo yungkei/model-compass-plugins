@@ -6,10 +6,10 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { AgentPlugin } from '@yungkei/model-compass-core';
+import { PluginType } from '@yungkei/model-compass-core';
 
-export const plugin: AgentPlugin = {
-  type: 'agent' as const,
+export const plugin = {
+  type: PluginType.AGENT,
   metadata: {
     id: '@yungkei/model-compass-claude-agent',
     name: 'Claude Code Agent',
@@ -28,10 +28,10 @@ export const plugin: AgentPlugin = {
       }
     }
   ],
-  onInstall: async (context) => {
+  onInstall: async (_context: any) => {
     console.log(`Configuring Claude Code to use Model Compass...`);
   },
-  onUninstall: async (context) => {
+  onUninstall: async (_context: any) => {
     console.log(`Removing Claude Code configuration...`);
   }
 };

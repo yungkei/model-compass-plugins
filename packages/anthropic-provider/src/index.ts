@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Anthropic Provider Plugin for Model Compass
  *
  * This plugin enables Model Compass to route requests to Anthropic's Claude API.
@@ -46,5 +46,3 @@ export class AnthropicProvider extends BaseProvider {
     };
   }
 }
-
-export { AnthropicProvider };
